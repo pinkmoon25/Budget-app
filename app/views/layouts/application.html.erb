@@ -11,6 +11,8 @@
   </head>
 
   <body>
+    <%if notice %><p class="notice alert alert-success"><%= notice %></p> <%end%>
+    <%if alert %> <p class="alert alert alert-danger"><%= alert %></p> <%end%>
     <%= yield %>
   </body>
 </html>
