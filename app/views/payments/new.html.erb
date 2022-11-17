@@ -1,0 +1,9 @@
+<h2> Add a Transaction <h2>
+
+<%= form_with model: @payment, url: category_payments_path(params[:category_id]), method: :post, local: true do |f|%>
+    <%= f.label :name , "Transaction name", class:'form-label'%>
+    <%= f.text_field :name, class:'form-control'%>
+    <%= f.label :amount, class:'form-label'%>
+    <%= f.number_field :amount, step: :any ,class:'form-control' %>
+    <%= f.submit class:'btn btn-primary' %>
+<%end%>

@@ -1,0 +1,14 @@
+<h1> Categories </h1>
+
+<ul> 
+  <% @categories.each do |c|%>
+  <li>
+    <%= link_to c.name, category_path(c.id)%> 
+    <%=image_tag(c.icon, options = {size: 50})%>
+    <span> <%=c.payments.sum(:amount)%> </span>
+    <%= button_to "remove", category_path(c.id), method: :delete, class:'btn btn-danger' %>
+  </li>
+  <%end%>
+</ul>
+
+<%= link_to "Add category", new_category_path %>
