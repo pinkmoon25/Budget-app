@@ -2,8 +2,6 @@
 
 An expense tracking application to categorise and manage your expenses.
 
-Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
-
 ## Built With
 
 - Ruby on Rails
@@ -61,6 +59,10 @@ rails s
 Contributions, issues and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/PinkMoon25/Budget-app/issues).
+
+## Acknowledgements
+
+Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
 
 ## Show your support
 
