@@ -9,6 +9,10 @@ An expense tracking application to categorise and manage your expenses.
 - devise
 - bootstrap
 
+## Live 
+
+ [see it live](https://agile-dawn-59030.herokuapp.com/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
