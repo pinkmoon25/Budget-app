@@ -1,0 +1,12 @@
+<section class="container-md">
+    <h2> <%=link_to '&xlarr;'.html_safe, categories_path, class:'text-white text-decoration-none btn btn-primary' %>
+     Create a category <h2>
+
+    <%= form_with model: @category, url: categories_path, method: :post, local: true do |f|%>
+        <%= f.label :name , "Category name", class:'form-label'%>
+        <%= f.text_field :name, required: true,  class:'form-control'%>
+        <%= f.label :icon, "Icon link", class:'form-label'%>
+        <%= f.text_field :icon, placeholder: 'Paste url link of icon' , required: true, class:'form-control' %>
+        <%= f.submit class:'btn btn-primary' %>
+    <%end%>
+</section>

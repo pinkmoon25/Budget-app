@@ -1,0 +1,22 @@
+<section class="container-md vh-100 d-flex flex-column justify-content-between align-items-center">
+<h1 class="vw-100 bg-primary text-white pt-3 pb-3 text-center"> 
+<%=link_to '&xlarr;'.html_safe, root_path, class:'text-white p-3 text-decoration-none' %> Categories </h1>
+<%if @categories.size%>
+  <ul class="container-fluid m-0 p-0"> 
+    <% @categories.each do |c|%>
+    <li class="d-flex justify-content-between align-items-center bg-light p-2 mb-3">
+      <div>
+        <%=image_tag(c.icon, options = {size: 50})%>
+        <%= link_to c.name, category_path(c.id)%>
+      </div> 
+      <span> $<%=c.payments.sum(:amount)%> </span>
+      <%= button_to "remove", category_path(c.id), method: :delete, class:'btn btn-danger' %>
+    </li>
+    <%end%>
+  </ul>
+<%else%>
+  <p> Nothing added yet, please Add expense category </p>
+<%end%>
+<%= link_to "Add Category", new_category_path, class:'container-md btn btn-lg btn-success text-white mb-3'%>
+
+</section>
