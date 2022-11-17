@@ -2,6 +2,8 @@
 
 An expense tracking application to categorise and manage your expenses.
 
+Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
+
 ## Built With
 
 - Ruby on Rails
@@ -12,6 +14,9 @@ An expense tracking application to categorise and manage your expenses.
 ## Live 
 
  [see it live](https://agile-dawn-59030.herokuapp.com/)
+
+## Quick project description
+ [see video description](https://www.loom.com/share/8ce4e98cd64349ebb1ed6be807b896eb)
 
 ## Getting Started
 
