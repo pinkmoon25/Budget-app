@@ -1,11 +1,14 @@
-<h3> <%=@total%> </h3>
-<ul> <% @transactions.each do |t|%>
-  <li>
-    <%=image_tag(@category.icon, options = {size: 50})%>
-    <strong> <%=t.name%> </strong>
-    <span> <%=t.amount%> </span>
-  </li>
-  <%end%>
-</ul>
+<section class="container-md vh-100 d-flex flex-column justify-content-between align-items-center">
+  <h3 class="vw-100 bg-primary text-white pt-3 pb-3 text-center"> 
+  <%=link_to '&xlarr;'.html_safe, categories_path, class:'text-white p-3 text-decoration-none' %> Total expense: $<%=@total%> </h3>
+  <ul class="container-fluid m-0 p-0"> <% @transactions.each do |t|%>
+    <li class="d-flex justify-content-between align-items-center bg-light p-2 mb-3">
+      <%=image_tag(@category.icon, options = {size: 50})%>
+      <strong> <%=t.name%> </strong>
+      <span> $<%=t.amount%> </span>
+    </li>
+    <%end%>
+  </ul>
 
-<%= link_to "Add Transaction", new_category_payment_path(params[:id])%>
+  <%= link_to "Add Transaction", new_category_payment_path(params[:id]), class:'container-md btn btn-lg btn-success text-white mb-3'%>
+</section>
