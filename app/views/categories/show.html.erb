@@ -1,0 +1,11 @@
+<h3> <%=@total%> </h3>
+<ul> <% @transactions.each do |t|%>
+  <li>
+    <%=image_tag(@category.icon, options = {size: 50})%>
+    <strong> <%=t.name%> </strong>
+    <span> <%=t.amount%> </span>
+  </li>
+  <%end%>
+</ul>
+
+<%= link_to "Add Transaction", new_category_payment_path(params[:id])%>
