@@ -1,6 +1,6 @@
 # Budget App 
 
-An expense tracking application to categorise and manage your expenses.
+A Ruby on Rails application with devise authentication to allow users to track and manage their expenses by categorising under different categories and transactions.
 
 ## Built With
 
