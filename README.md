@@ -1,13 +1,22 @@
-# Budget App 
+### Budget App 💰
 
-A Ruby on Rails application with devise authentication to allow users to track and manage their expenses by categorising under different categories and transactions.
+A Ruby on Rails application with Devise authentication, allowing users to track and manage their expenses by categorizing them under different categories and transactions. Stay on top of your finances with a clean, user-friendly interface.
 
-## Built With
+### Features:
+- Secure user authentication with Devise
+- Categorize and track expenses easily
+- View and manage transactions by category
+- Responsive design powered by Bootstrap
 
+### Built With:
 - Ruby on Rails
 - PostgreSQL
-- devise
-- bootstrap
+- Devise
+- Bootstrap
+
+---
+
+This version emphasizes key functionalities and technologies used in the app.
 
 ## Live 
 
